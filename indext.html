@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- section form -->
+
+        <!-- bagian artikel atas -->
+    <section>
+        <div class="utama">
+            <header>
+                <h1>Kalkulator BMI</h1>
+            </header>
+    
+            <article>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk,hitung sekarang di kalkulator BMI.</p>
+            </article>
+        </div>
+
+        <!-- bagian form  -->
+        <form class="form-input" onsubmit="event.preventDefault(); hitungBMI();">
+            <p class="pilih">JENIS KELAMIN</p>
+            <div class="jenis">
+                <label for="jenis-kelamin"><input type="radio" name="Jenis Kelamin" id="pria">Pria</label><br>
+                <label for="jenis-kelamin"><input type="radio" name="Jenis Kelamin" id="wanita">Wanita</label><br>
+            </div>
+
+            <div class="input">
+                <p>Berat Badan</p>
+                <label for="berat badan"></label>
+                <input class="input-kolom" id="berat-badan" type="number"/>
+                <p>Usia</p>
+                <label for="Usia"></label>
+                <input class="input-kolom" id="Usia" type="number"/>
+                <p>Tinggi Badan</p>
+                <label for="Tinggi badan"></label>
+                <input class="input-kolom" id="Tinggi-badan" type="number"/>
+            </div>
+
+            <button type="submit"  class="hitung">Hitung BMI</button>
+             <button class="reset">Reset</button>
+        </form>
+
+        <!-- bagian artikel bawah -->
+        <div>
+            <header>
+                <h2>Keunggulan fitur</h2>
+            </header>
+            <article class="setelah" >
+                    <p >1. Menghitung berat badan</p>
+                    <p >2. Menentukan kategori berat badan ideal atau tidak</p>
+                    <p >3. Mempersiapkan program penurunan berat badan</p>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- section result -->
+     <section>
+        <div>
+            <header>
+                <h1>Hasil</h1>
+            </header>
+    
+            <!-- hasil kalkulasi -->
+            <div class="hasil">
+                <p id="hasil"></p>
+            </div>
+    
+            <!-- info dari hasil -->
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </article>
+        </div>
+    
+        </section>
+    </main>
+
+    <!-- footer ini -->
+     <footer>
+        <span>Made by Nafi</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
